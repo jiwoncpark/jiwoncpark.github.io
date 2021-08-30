@@ -1,6 +1,6 @@
 title:              Ji Won Park
 email:              jwp@stanford.edu
-description:        Ph.D. student at Stanford developing probabilistic ML methods for astrophysics
+description:        Ph.D. student at Stanford, probabilistic ML x astrophysics
 author:             Ji Won Park
 baseurl:            ""
 url:                "https://jiwoncpark.github.io"
@@ -11,6 +11,8 @@ github_username: jiwoncpark
 facebook_username:
 instagram_username:  
 linkedin_username: ji-won-park
+cv_url: https://drive.google.com/file/d/1aZRrBrzzGgYHjSja_IicCxKg6hC2JaOe/view?usp=sharing
+google_scholar_url: https://scholar.google.com/citations?user=URG3MMYAAAAJ&hl=en
 
 # Add your google-analytics ID here to activate google analytics
 google_analytics:   G-R7D27X1GF2 # out your google-analytics code

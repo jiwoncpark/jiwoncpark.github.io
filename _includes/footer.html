@@ -67,6 +67,24 @@
             </a>
           </li>
           {% endif %}
+          {% if site.cv_url %}
+          <li class="list-inline-item">
+            <a href="{{ site.cv_url }}">
+              <span class="fa-stack fa-lg">
+                <i class="ai ai-cv big-icon" id="cv-icon" style="position:relative;bottom:15px;transform:scale(1.8);"></i>
+              </span>
+            </a>
+          </li>
+          {% endif %}
+          {% if site.google_scholar_url %}
+          <li class="list-inline-item">
+            <a href="{{ site.google_scholar_url }}">
+              <span class="fa-stack fa-lg">
+                <i class="ai ai-google-scholar big-icon" id="google-scholar-icon" style="position:relative;right:15px;bottom:15px;transform:scale(1.8);"></i>
+              </span>
+            </a>
+          </li>
+          {% endif %}
         </ul>
         <p class="copyright text-muted">Copyright &copy; {{ site.author }} {{ 'now' | date: "%Y" }}</p>
       </div>
