@@ -1,6 +1,6 @@
 title:              Ji Won Park
-email:              your-email@example.com
-description:        Ji Won's website
+email:              jwp@stanford.edu
+description:        Ph.D. student at Stanford developing probabilistic ML methods for astrophysics
 author:             Ji Won Park
 baseurl:            ""
 url:                "https://jiwoncpark.github.io"
@@ -13,7 +13,7 @@ instagram_username:
 linkedin_username: ji-won-park
 
 # Add your google-analytics ID here to activate google analytics
-google_analytics:   UA-XXXXXXXXX-X # out your google-analytics code
+google_analytics:   G-R7D27X1GF2 # out your google-analytics code
 
 # Build settings
 markdown:           kramdown
