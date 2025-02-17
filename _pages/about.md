@@ -14,7 +14,7 @@ I am a Principal Machine Learning Scientist at [Prescient Design](https://www.ge
 * Decision-making under uncertainty
     * Designing acquisition functions for multi‑objective Bayesian optimization tailored for molecular property spaces with complex correlation structures
     * Productionalizing machine‑guided design of antibodies, small molecules, and molecular glues with specific project desiderata
-* Robust inference in high dimensions
+* Inference in high dimensions
     * Nonparametric/semiparametric Bayes, adaptation, targeted learning
     * Post‑hoc calibration methods including conformal prediction
     * Causality‑inspired domain generalization methods for out‑of‑distribution robustness
