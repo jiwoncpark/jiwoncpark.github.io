@@ -1,6 +1,6 @@
 ---
 title: 'Estimation as betting'
-date: 2025-02-16
+date: 2025-02-19
 permalink: /posts/2025/02/estimation-as-betting/
 tags:
   - hypothesis_testing
