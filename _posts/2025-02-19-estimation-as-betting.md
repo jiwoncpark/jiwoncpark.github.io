@@ -1,3 +1,12 @@
+---
+title: 'Estimation as betting'
+date: 2025-02-16
+permalink: /posts/2025/02/estimation-as-betting/
+tags:
+  - hypothesis_testing
+  - e_values
+---
+
 # Estimation as betting
 
 I've been really enjoying the lecture series "A Martingale Theory of Evidence" by Aaditya Ramdas. [Part 2 of the series](https://youtu.be/H8nviC_cDAE?si=p5j_fLwCe0jPl63V) was particularly eye-opening to me. He estimates the mean of a bounded random variable under a betting framework and demonstrates that estimation is essentially testing, which can be viewed as betting.
