@@ -2,7 +2,7 @@
 permalink: /
 title: "About Me"
 author_profile: true
-redirect_from: 
+redirect_from:
     - /about/
     - /about.html
 ---
@@ -20,5 +20,4 @@ I am a Principal Machine Learning Scientist at [Prescient Design](https://www.ge
     * Causality‑inspired domain generalization methods for out‑of‑distribution robustness
 * Sampling in high dimensions
     * Sampling algorithms for non‑log‑concave distributions
-    * Exploring diffusion models as sampling tools for Bayesian inference
-    * Hybridizing MCMC with variational methods to balance accuracy and computational cost
+    * Hybridizing MCMC with variational methods to balance accuracy and speed
