@@ -13,11 +13,11 @@ tags:
 
 I spent a few weeks last year confused about influence functions. The main source of the confusion was that influence functions manifest as distinct objects in multiple fields: the **efficient influence function (EIF)** in semiparametric statistics and the **empirical influence function (EmpIF)** in robust statistics and, more recently, ML interpretability.
 
-While these objects are conceptually related, they are used for different purposes and often require specialized implementations. 
+While these objects are conceptually related, they are used for different purposes and often require specialized implementations.
 
-Both objects measure the sensitivity of an estimand to changes in some underlying distribution. They are concepts defined in relation to an estimand, a finite-dimensional functional $$\Psi(P)$$ of a distribution $$P$$. 
+Both objects measure the sensitivity of an estimand to changes in some underlying distribution. They are concepts defined in relation to an estimand, a finite-dimensional functional $$\Psi(P)$$ of a distribution $$P$$.
 
-In this Part 1 of a three-part series on influence functions, we will work with the mean estimand, i.e., $$\Psi(P) \equiv \mathbb{E}_P[X]$$. We will derive the EIF of this estimand and show that, when $$P$$ equals the empirical distribution $$P_n$$, the EIF and EmpIF coincide. 
+In this Part 1 of a three-part series on influence functions, we will work with the mean estimand, i.e., $$\Psi(P) \equiv \mathbb{E}_P[X]$$. We will derive the EIF of this estimand and show that, when $$P$$ equals the empirical distribution $$P_n$$, the EIF and EmpIF coincide.
 
 ## Deriving the efficient influence function for the mean
 
@@ -36,14 +36,14 @@ So we simply have
 
 ## The empirical counterpart
 
-The EmpIF, on the other hand, is commonly defined via a leave-one-out (LOO) formulation with respect to the empirical distribution,
+The EmpIF, on the other hand, is commonly defined via a leave-one-out (LOO) formulation with respect to the empirical measure,
 \\[P_n \equiv \frac{1}{n} \sum_{i=1}^n \delta_{x_i}.\\] The estimand of interest, then, is simply the sample mean:
 \\[\Psi(P_n) = \frac{1}{n} \sum_{i=1}^n x_i.\\]
 The EmpIF asks what the effect on $$\Psi$$ would be if a sample $$x_j$$ were to be removed. Denoting by $$P_n^{-j}$$ the distribution without $$x_j$$, the sample mean under perturbation would be:
 \\[\Psi(P_n^{-j}) = \frac{1}{n-1} \sum_{i\neq j} x_i.\\]
 Then the EmpIF with appropriate scaling is
-\\[{\rm EmpIF} = \psi_{\rm emp}(x_j; \Psi) = (n-1)\left(\Psi(P_n) - \Psi(P_n^-j)\right),\\]
-where the notation no longer explicitly includes the dependence on the distribution, as the distribution is always assumed to be $$P_n$$. 
+\\[{\rm EmpIF} = \psi_{\rm emp}(x_j; \Psi) = (n-1)\left(\Psi(P_n) - \Psi(P_n^{-j})\right),\\]
+where the notation no longer explicitly includes the dependence on the distribution, as the distribution is always assumed to be $$P_n$$.
 
 Notice that, putting $$\bar X \equiv \frac{1}{n}\sum_{i=1}^n x_i$$, this can be written
 \\[\psi_{\rm emp}(x_j; \Psi) = (n-1) \left( {\bar X} - \frac{1}{n-1} \sum_{i \neq j} x_j \right) = (n-1){\bar X} - \left( n{\bar X} - x_j \right) = -{\bar X} + x_j,\\]
@@ -74,14 +74,14 @@ for n_emp in sample_sizes:
     for _ in range(100):  # repeat 100 times
 	    # Define some empirical distribution
 	    X = np.random.normal(size=n_emp)
-	
+
 	    # Choose x_j
 	    x_j = np.random.choice(X)
-	
+
 	    # Evaluate EIF, EmpIF
 	    eif = get_eif(x_j)
 	    empif = get_empif(x_j, X)
-	
+
 	    # Get difference
 	    diff_n.append(empif - eif)
 	# Get mean, std in diff across runs
@@ -105,7 +105,7 @@ This snippet produces ![Efficient vs. Empirical Influence Function for the Mean]
 ### Summary
 - We learned how to derive the EIF using the example of the mean estimand.
 - We showed that, for the mean estimand, the EIF with $$P=P_n$$ reduces to the EmpIF.
-- We numerically confirmed this for varying $$n$$. 
+- We numerically confirmed this for varying $$n$$.
 
 While the mean example may appear trivial, the story is not as neat for other estimators, for which the use cases of EIF and EmpIF diverge. **A sneak peek into the rest of the series:**
 
