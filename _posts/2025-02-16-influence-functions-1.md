@@ -21,7 +21,7 @@ In this Part 1 of a three-part series on influence functions, we will work with 
 
 ## Deriving the efficient influence function for the mean
 
-Let us start by deriving the EIF for the mean estimand, $$\Psi(P) = \mathbb{E}_P[X]$$. We will use a simple method that works in most cases. It works by first defining what's called a $$\delta$$-contaminated distribution, which is the result of perturbing a distribution with a point mass at $$x$$ with weight $$\epsilon$$:
+Let us start by deriving the EIF for the mean estimand, $$\Psi(P) = \mathbb{E}_P[X]$$. We will use a simple method that works in most cases, formalized by Ichimura and Newey (2015). See Hines et al. (2022) for a very friendly tutorial. In brief, the method is based on the result that the EIF is what's called a _Gateaux derivative_ (a type of generalized derivative for probability distributions) with respect to a smooth perturbation evaluated at a point mass. It works by first defining what's called a $$\delta$$-contaminated distribution, which is the result of perturbing a distribution with a point mass at $$x$$ with weight $$\epsilon$$:
 \\[P_\epsilon = (1-\epsilon)P + \epsilon \delta_x.\\]
 The EIF can then be derived as the following generalized derivative:
 \\[{\rm EIF} \equiv \psi(x; P, \Psi) = \lim_{\epsilon \to 0} \frac{\Psi(P_\epsilon) - \Psi(P)}{\epsilon}. \tag{1}\\]
@@ -51,7 +51,7 @@ or, equivalently, $$\psi_{\rm emp}(x; \Psi) = -\mathbb{E}_{P_n}[X] + x.$$ We hav
 
 ## Numerical verification
 
-The EmpIF approaches the EIF as $$n$$ increases. Let's verify this visually.
+The EmpIF approaches the EIF as $$n$$ increases. Let's verify this visually, though it should be obvious as we are basically just checking that the sample mean of a standard normal approaches 0.
 
 ```python
 import numpy as np
@@ -109,6 +109,11 @@ This snippet produces ![Efficient vs. Empirical Influence Function for the Mean]
 
 While the mean example may appear trivial, the story is not as neat for other estimators, for which the use cases of EIF and EmpIF diverge. **A sneak peek into the rest of the series:**
 
-**Part 2.** For more complex estimands, the EIF and EmpIF do not coincide in finite samples as they do for the mean estimand. We take a close look at some non-linear estimands, the quantile and the M-estimator (which encompasses maximum-likelihood and least-squares estimators). Because evaluating the EmpIF for every leave-one-out training sample can be unfeasible for estimators that involve model fitting, like the weights of a neural network, we introduce some approximations that are commonly employed for ML interpretability.
+**Part 2.** For more complex estimands, the EIF and EmpIF do not coincide in finite samples as they do for the mean estimand. We take a close look at the quantile estimand as an example of a non-linear functional.  Because evaluating the EmpIF for every leave-one-out training sample can be unfeasible for estimators that involve model fitting, like the weights of a neural network, some approximations are commonly employed for ML interpretability.
 
 **Part 3.** Fundamentally, the EmpIF is defined explicitly for $$P_n$$ and estimates the finite-sample sensitivity of the estimand to particular data points. The estimand considered for the EmpIF is usually some (finite-dimensional) parameter of a parametric model. The EIF, on the other hand, is an idealized object, defined for an arbitrary distribution $$P$$ without explicit reference to a parametric model, and representing the theoretical sensitivity of any estimand to infinitesimal perturbations on $$P$$. Techniques like one-step estimation and targeted learning use the EIF to equip a potentially biased estimator with *asymptotic efficiency*.
+
+### References
+
+[1] Ichimura, H., & Newey, W. K. (2015). The influence function of semiparametric estimators. Quantitative Economics, 13(1), 29-61.
+[2] Hines, O., Dukes, O., Diaz-Ordaz, K., & Vansteelandt, S. (2022). Demystifying statistical learning based on efficient influence functions. The American Statistician, 76(3), 292-304.

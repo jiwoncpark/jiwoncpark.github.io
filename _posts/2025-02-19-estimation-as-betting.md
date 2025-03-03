@@ -29,7 +29,7 @@ This can be evaluated on a grid of $$m$$.
 
 ## Where did this confidence sequence come from?
 
-Intuitively, for each $$m \in [0, 1]$$, we are testing the null $$H_0^{(m)}: \mathbb{E}_P[X_i\mid X_{1:i-1}] = m$$.
+Intuitively, for each candidate mean $$m \in [0, 1]$$, we are testing the null $$H_0^{(m)}: \mathbb{E}_P[X_i\mid X_{1:i-1}] = m$$.
 
 We claim that $$C_t$$ is a confidence sequence for $$\mu$$. That is,
 <div> \[ \sup_{P \in \mathcal{P}^\mu} P\left(\exists t \in \mathbb{N}: \mu \notin C_t \right) \leq \alpha, \] </div> which conversely states that $$C_t$$ contains $$\mu$$ with high probability.
@@ -89,5 +89,7 @@ A huge thank you to Aaditya Ramdas for the great lecture series and [textbook](h
 
 
 $$*$$ A sufficient condition for "niceness" being that $$X$$ is regular and $$\int \mathbb{E}_P[\mid \nabla_\theta L(X, \theta) \mid]$$ is finite, by Fubini
+
+### References
 
 [1] Waudby-Smith, I. & Ramdas, A. (2024). Estimating means of bounded random variables by betting. JRSS Series B: Statistical Methodology, 86(1), 1-27.
