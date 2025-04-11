@@ -49,7 +49,7 @@ The proof essentially depends on a well-known result that states that, for any d
 
 First, consider the set,
 <div> \[ B_{p^*}(r_{p^*}) \equiv \{z \in \mathbb{R}^d: ||z||_{p^*} \leq r_{p^*} \}, \] </div>
-where $$r_{p^*}$$ is chosen to satisfy $$\int_{B_{p^*}(r_{p^*})} f(z) dz = 1-\alpha$$. This is a highest-density region, because $$||z||_{p^*} \leq r_{p^*} \iff f(z) \geq C e^{-r_{p^*}}$$. This means that, for any other measurable set $$A$$ satisfying $$\int_A f(z) dz = 1-\alpha$$, we have $${\rm Vol} \left( B_{p^*}(r_{p^*}) \right) \leq {\rm Vol}(A)$$. This includes sets of the form $$B_p(q_p)$$ with $$q_p$$ chosen to satisfy $$\int_{B_p(q_p)} f(z) dz = 1-\alpha$$. The minimum volume for $$B_p(q_p)$$ occurs at $$p = p^*$.
+where $$r_{p^*}$$ is chosen to satisfy $$\int_{B_{p^*}(r_{p^*})} f(z) dz = 1-\alpha$$. This is a highest-density region, because $$||z||_{p^*} \leq r_{p^*} \iff f(z) \geq C e^{-r_{p^*}}$$. This means that, for any other measurable set $$A$$ satisfying $$\int_A f(z) dz = 1-\alpha$$, we have $${\rm Vol} \left( B_{p^*}(r_{p^*}) \right) \leq {\rm Vol}(A)$$. This includes sets of the form $$B_p(q_p)$$ with $$q_p$$ chosen to satisfy $$\int_{B_p(q_p)} f(z) dz = 1-\alpha$$. The minimum volume for $$B_p(q_p)$$ occurs at $$p = p^*$$.
 
 ### References
 
