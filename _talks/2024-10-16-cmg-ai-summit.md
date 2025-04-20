@@ -8,4 +8,4 @@ date: 2024-10-16
 location: "South San Francisco, CA"
 ---
 
-A panel organized by Genentech CMG (Commercial, Medical, and Government Affairs) moderated by Amit Akhelikar (COO & Managing Partner, Lynx Analytics) on what it takes to gain competitive advantage as a pharma in the age of AI
+A panel organized by Genentech CMG (Commercial, Medical, and Government Affairs) moderated by Amit Akhelikar (COO & Managing Partner, Lynx Analytics) on what it takes to gain competitive advantage as a pharma in the age of AI.
