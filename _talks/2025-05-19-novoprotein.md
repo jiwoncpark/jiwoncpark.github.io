@@ -4,7 +4,7 @@ collection: talks
 type: "Invited talk"
 permalink: /talks/2025-05-19-novoprotein
 venue: "From Models to Molecules: AI’s Expanding Roles in Therapeutics, hosted by Novoprotein"
-date: 2025-04-15
+date: 2025-05-19
 location: "South San Francisco, CA"
 ---
 

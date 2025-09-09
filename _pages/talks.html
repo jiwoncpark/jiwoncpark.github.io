@@ -5,6 +5,16 @@ permalink: /talks/
 author_profile: true
 ---
 
+<h2>Recent events</h2>
+
+{% assign recent_talks = site.talks | sort: 'date' | reverse %}
+<ul>
+{% for talk in recent_talks limit:5 %}
+<li><a href="{{ talk.url }}"><strong>{{ talk.date | date: "%B %d, %Y" }}</strong></a>: {{ talk.type }} "{{ talk.title }}" - {{ talk.venue }} in {{ talk.location }} </li>
+{% endfor %}
+</ul>
+
+
 {% if site.talkmap_link == true %}
 
 <p style="text-decoration:underline;"><a href="/talkmap.html">See a map of all the places I've given a talk!</a></p>

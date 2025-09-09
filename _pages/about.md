@@ -13,6 +13,15 @@ I am a Principal Machine Learning Scientist at [Prescient Design](https://www.ge
 * **Prediction-centric Bayesian optimization**: Developing “prior-free” Bayesian frameworks with LLMs for decision-making under uncertainty in risk-sensitive settings
 * **Robust simulation-based inference**: Using physics-driven simulators for likelihood-free inference while accounting for model selection and Sim2Real gap
 
+<h2>Recent events</h2>
+
+{% assign recent_talks = site.talks | sort: 'date' | reverse %}
+<ul>
+{% for talk in recent_talks limit:5 %}
+<li><a href="{{ talk.url }}"><strong>{{ talk.date | date: "%B %d, %Y" }}</strong></a>: {{ talk.type }} "{{ talk.title }}" - {{ talk.venue }} in {{ talk.location }} </li>
+{% endfor %}
+</ul>
+
 ## Research themes
 * **Decision-making under uncertainty (AI4Science)**
     * Multi‑objective Bayesian optimization for molecular design
