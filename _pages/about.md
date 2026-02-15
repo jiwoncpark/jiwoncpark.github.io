@@ -7,11 +7,8 @@ redirect_from:
     - /about.html
 ---
 
-I am a Principal Machine Learning Scientist at [Prescient Design](https://www.gene.com/scientists/our-scientists/prescient-design), [Genentech](https://www.gene.com/scientists/our-scientists/ji-won-park). My research focuses on high-dimensional inference and sampling, with a particular emphasis on developing probabilistic algorithms for active, machine-guided molecular design. I received my Ph.D. in Physics from [Stanford University](https://kipac.stanford.edu/people/ji-won-park), where I worked on hierarchical Bayesian methods for cosmology. During my Ph.D., I interned at [NASA Ames](https://www.nasa.gov/ames/) and the [Center for Computational Astrophysics](https://www.simonsfoundation.org/flatiron/center-for-computational-astrophysics/) at the Flatiron Institute. I hold a B.S. in Mathematics and a B.S. in Physics from [Duke University](https://duke.edu/).
+I am a Principal Scientist and Group Lead at [Prescient Design](https://www.gene.com/scientists/our-scientists/prescient-design), [Genentech](https://www.gene.com/scientists/our-scientists/ji-won-park), developing statistical frameworks for reliable decision making using large models, with applications to model‑guided scientific discovery. My research focuses on uncertainty quantification, Bayesian experimental design, and scalable inference, emphasizing methods that provide formal guarantees, are sample‑efficient, and improve with advances in foundation and generative models. I received my Ph.D. in Physics from [Stanford University](https://kipac.stanford.edu/people/ji-won-park), where I worked on hierarchical Bayesian methods for cosmology. During my Ph.D., I interned at [NASA Ames](https://www.nasa.gov/ames/) and the [Center for Computational Astrophysics](https://www.simonsfoundation.org/flatiron/center-for-computational-astrophysics/) at the Flatiron Institute. I hold a B.S. in Mathematics and a B.S. in Physics from [Duke University](https://duke.edu/).
 
-## Current research focus  
-* **Prediction-centric Bayesian optimization**: Developing “prior-free” Bayesian frameworks with LLMs for decision-making under uncertainty in risk-sensitive settings
-* **Robust simulation-based inference**: Using physics-driven simulators for likelihood-free inference while accounting for model selection and Sim2Real gap
 
 <h2>Recent events</h2>
 
