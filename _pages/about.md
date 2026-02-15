@@ -19,17 +19,4 @@ I am a Principal Scientist and Group Lead at [Prescient Design](https://www.gene
 {% endfor %}
 </ul>
 
-## Research themes
-* **Decision-making under uncertainty (AI4Science)**
-    * Multi‑objective Bayesian optimization for molecular design
-    * Productionalizing ML-guided design of antibodies, small molecules, and molecular glues tailored to project-specific desiderata
-* **Inference and prediction in high dimensions**
-    * Semantic uncertainty quantification for LLMs
-    * Post-hoc calibration (e.g. conformal prediction, semiparametric methods)
-    * Out‑of‑distribution generalization, diagnostics for distribution shifts
-* **Sampling in high dimensions**
-    * Diversity-steered sampling strategies for LLMs
-    * Guidance for diffusion-based generative models
-    * Sampling algorithms for non‑log‑concave distributions
-
 
